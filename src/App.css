@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+main{
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+main.dark, header.dark {
+  --background-color: hsl(220, 6%, 10%); 
+  --text-color: white;
+  --elements-color: hsl(180, 3%, 6%);
+}
+.theme-changer {
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
